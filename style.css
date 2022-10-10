@@ -7,10 +7,13 @@
 .container {
     height: 97vh;
     width: 97vw;
-    border: 2px solid pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
     height: 80%;
     width: 80%;
+    border: 2px solid pink;
 }
