@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    background: hsl(226, 43%, 10%)
+    background: rgba(31, 29, 54, 255);
 }
 
 .container {
@@ -16,4 +16,38 @@
     height: 80%;
     width: 80%;
     border: 2px solid pink;
+}
+
+.profile img {
+    height: 6vh;
+    width: 3vw;
+    border-radius: 100px;
+    border: solid white;
+}
+
+.profile h3,
+.profile h2 {
+    color: white;
+    background: hsl(246, 80%, 60%);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    background: hsl(246, 80%, 60%);
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.duration {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: gainsboro;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.one {
+    background: hsl(235, 46%, 20%);
 }
