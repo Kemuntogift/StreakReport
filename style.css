@@ -104,3 +104,23 @@
     color: lightgray;
     background: hsl(235, 46%, 20%);
 }
+
+.three {
+    background: #56c2e6;
+}
+
+.four {
+    background: #ff5e7d;
+}
+
+.five {
+    background: #4bcf83;
+}
+
+.six {
+    background: #7235d1;
+}
+
+.seven {
+    background: #f1c75b;
+}
