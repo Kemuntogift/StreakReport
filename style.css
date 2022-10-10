@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: hsl(226, 43%, 10%)
+}
+
+.container {
+    height: 97vh;
+    width: 97vw;
+    border: 2px solid pink;
+}
+
+.content {
+    height: 80%;
+    width: 80%;
+}
