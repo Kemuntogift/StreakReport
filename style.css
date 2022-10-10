@@ -13,9 +13,13 @@
 }
 
 .content {
-    height: 80%;
+    height: 50%;
     width: 80%;
-    border: 2px solid pink;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "one two three four" "one five six seven";
+    gap: 30px;
 }
 
 .profile img {
@@ -29,6 +33,7 @@
 .profile h2 {
     color: white;
     background: hsl(246, 80%, 60%);
+    padding: 15px;
 }
 
 .profile {
@@ -37,36 +42,127 @@
     background: hsl(246, 80%, 60%);
     padding: 25px;
     border-radius: 10px;
+    height: 16vh;
 }
 
 .duration {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 16vh;
     color: gainsboro;
     padding: 25px;
     border-radius: 10px;
+    background: hsl(235, 46%, 20%);
+}
+
+.duration h4 {
+    background: hsl(235, 46%, 20%);
 }
 
 .one {
     background: hsl(235, 46%, 20%);
+    height: 50vh;
+    border-radius: 18px;
+    grid-area: one;
 }
 
 .two {
     background: hsl(15, 100%, 70%);
     border-radius: 10px;
     display: flex;
-    padding-right: 20px;
+    width: 15.5vw;
+    justify-content: end;
+    padding: 25px;
     position: relative;
+    grid-area: two;
+}
+
+.three {
+    background: #56c2e6;
+    grid-area: three;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+    position: relative;
+}
+
+.four {
+    background: #ff5e7d;
+    grid-area: four;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+    position: relative;
+}
+
+.four,
+.right-four {
+    background: #ff5e7d;
+}
+
+.five {
+    grid-area: five;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+    position: relative;
+}
+
+.five,
+.right-five {
+    background: #4bcf83;
+}
+
+.six {
+    grid-area: six;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+    position: relative;
+}
+
+.six,
+.right-six {
+    background: #7235d1;
+}
+
+.seven {
+    grid-area: seven;
+    border-radius: 10px;
+    display: flex;
+    justify-content: end;
+    padding: 25px;
+    position: relative;
+}
+
+.seven,
+.right-seven {
+    background: #f1c75b;
+}
+
+.right {
+    background: hsl(15, 100%, 70%);
 }
 
 .div-content {
     display: flex;
+    flex-direction: column;
     position: absolute;
     background: hsl(235, 46%, 20%);
     border-radius: 18px;
     padding: 20px;
-    margin-top: 2%;
+    padding-left: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 20%;
+    height: 16vh;
+    width: 17.5vw;
     justify-content: space-between;
 }
 
@@ -76,7 +172,7 @@
     opacity: 30%;
 }
 
-.duty {
+.div-content .duty {
     display: flex;
     justify-content: space-between;
 }
@@ -90,7 +186,7 @@
     height: 5px;
 }
 
-.time {
+.div-content .time {
     display: flex;
     flex-direction: column;
 }
@@ -105,22 +201,14 @@
     background: hsl(235, 46%, 20%);
 }
 
-.three {
+.right-three {
     background: #56c2e6;
 }
 
-.four {
-    background: #ff5e7d;
-}
-
-.five {
-    background: #4bcf83;
-}
-
-.six {
-    background: #7235d1;
-}
-
-.seven {
-    background: #f1c75b;
+.smallc {
+    flex: 1;
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
